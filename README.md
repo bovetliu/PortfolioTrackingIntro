@@ -1,13 +1,17 @@
 # Portfolio Tracking, Automated Stock Trading
 
-This project is intended to track stock allocation recorded in a mysql database table once per 
-minute.
+This project is intended to track stock allocation recorded in a mysql database table every
+two minutes. Target users of this software will be office workers having no time to constantly watch 
+for change of stock market, and want to avoid sudden stock slump or want to apply results of analysis 
+in real-world US stock trading.
+ ![Programming_running](resources/pics/Programming_running.png "Programming_running")
+
 
 ## Installation
 
-1. (TODO) For now, please directly contact me, I will provide one Amazon Machine Image, 
-CloudWatch events and a small piece of python lambda function code, so the program starts 
-before trading starts and exists after market closes.
+1. (TODO) For now, please directly contact me (bowei_liu@ymail.com), I will provide one Amazon 
+Machine Image, CloudWatch events and a small piece of python lambda function code, free of charge.
+Program starts before trading starts and exists after market closes. 
 
 
 ## Usage
@@ -26,15 +30,24 @@ before trading starts and exists after market closes.
    `record_date`. This means one can choose to write allocations to database each day, or write whole
    portfolio allocations to database only when a change has been made to portfolio allocation.
 
+## Question
+
+1. Will my stock selection be stolen by using this software?  
+   Answer: no, there is no back-door code reporting stock selection, that is your intellectual 
+   property. You can choose to run the EC2 in a VPC, which blocks any unwanted network traffic.
+
+2. What is estimated AWS expense of running this software?
+   Answer: ~13 USD per month. EC2 will only be running when marget is open. 
 
 ## Contributing
-1. still thinking, want to keep this project simple.
+1. still thinking, want to keep this project simple, execution level only, and only for 
+   amateurs 
 
 ## Tests
 
 ## History
 
-Started at Jun. 1st.
+Started at Jun. 1st. 2017
 
 ## Credits
 
