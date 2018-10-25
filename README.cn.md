@@ -2,6 +2,9 @@
 
 这个小项目的目的是用自动化股票交易的跟踪一个Mysql数据库表里面记录的持仓情况。目标用户是那些没有时间
 一直盯着股市，并且想要躲避一些突然的股票下跌或者想实践一下自己对美股研究的办公室上班族。
+
+__希望的效果就是,不管你是用什么工具,语言作的分析,只要把结果写到Mysql表中,剩下的股票交易就交给这个程序来执行.__
+
  ![Programming_running](resources/pics/Programming_running.png "Programming_running")
 
 
@@ -11,6 +14,7 @@
 程序会在股市开市之前启动,闭市1小时左右结束.
 
 ## 使用方法
+0. 先决条件,在Interactive Brokers开了户, IB是美股最主流的自动化交易券商.
 1. 如下图所示, 把目标股票持仓情况写到一个数据库表中  
    ![001_insert_portfolio_data](resources/pics/001_insert_portfolio_data.png "001_insert_portfolio_data")
 2. 确认股票跟踪软件, IB 的TWS或者IBGateway在运行.
