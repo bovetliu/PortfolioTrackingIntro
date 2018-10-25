@@ -10,7 +10,7 @@ __希望的效果就是,不管你是用什么工具,语言作的分析,只要把
 
 ## 安装
 
-1. (TODO) 目前, 请直接联系我 (bowei_liu@ymail.com), 我会免费提供一个Amazon Machine Image, CloudWatch Events 和一小段 python的Lambuda Function代码.
+1. (TODO) 目前, 请直接联系我 (bowei_liu@ymail.com), 我会免费提供一个Amazon Machine Image, CloudWatch Events 和一小段 python的Lambda Function代码.
 程序会在股市开市之前启动,闭市1小时左右结束.
 
 ## 使用方法
