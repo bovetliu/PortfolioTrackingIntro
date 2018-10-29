@@ -9,10 +9,8 @@ in real-world US stock trading.
 
 ## Installation
 
-1. (TODO) For now, please directly contact me (bowei_liu@ymail.com), I will provide one Amazon 
-Machine Image, CloudWatch events and a small piece of python lambda function code, free of charge.
-Program starts before trading starts and exists after market closes. 
-
+* [Installation using Amazon Machine Image](./installation_ami.md)  
+* TODO local java jar running
 
 ## Usage
 1. Write your stock allocation data to a Mysql data table, like following
