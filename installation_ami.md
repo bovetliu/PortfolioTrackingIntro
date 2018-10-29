@@ -69,7 +69,7 @@ have created EC2s before, the content should be quite familiar with you.
     port forwarding between remote 5901 port and local 5901 port. 5901 Port means the 1st VNC remote desktop (5900 + 1).
     For detail, please refer [Install VNC on Ubuntu 16.04][4]
 
-13. If you able to SSH into the instance, it means you have completed AWS installation.  
+13. If you are able to SSH into the instance, it means you have completed installation of Stockapp using AMI.  
 
 [1]: https://aws.amazon.com/console/
 [2]: https://www.interactivebrokers.com/en/index.php?f=16457
