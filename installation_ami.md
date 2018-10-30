@@ -12,7 +12,8 @@ have created EC2s before, the content should be quite familiar with you.
    this AMI in category "Community AMI", of which the name is "stockapp_d07cd2_ami"
    
    This image is based on Ubuntu 16.04(ami-0782e9ee97725263d). It has been added one mysql server, 
-   [IB Gateway software 972.1p][2], VNC desktop server, and the [__Stockapp__][3] for automated stock trading.
+   [IB Gateway software 972.1p][2], [ibc][5] (required for automatic IBGateway launching and 
+   stopping), VNC desktop server, and the [__Stockapp__][3] for automated stock trading.
    
    ![ami choose](resources/pics/aws_installation_001_choose_ami.png "AMI choosing")
 6. Choose instance type t2.small, pricing of t2.small in region US East (Ohio) at the time of writing
@@ -75,3 +76,4 @@ have created EC2s before, the content should be quite familiar with you.
 [2]: https://www.interactivebrokers.com/en/index.php?f=16457
 [3]: https://github.com/bovetliu/PortfolioTrackingIntro/releases/tag/1.0
 [4]: https://www.linode.com/docs/applications/remote-desktop/install-vnc-on-ubuntu-16-04/#connect-to-vnc-from-your-desktop
+[5]: https://github.com/IbcAlpha/IBC

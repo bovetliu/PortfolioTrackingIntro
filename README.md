@@ -10,7 +10,11 @@ in real-world US stock trading.
 ## Installation
 
 * [Installation using Amazon Machine Image](./installation_ami.md)  
-* TODO local java jar running
+* [Installation at local](./installation_local.md)
+
+## Setting up
+* [Setting up](./setting_up.md)
+* [Reducing AWS expense by limiting EC2 running time](./setting_up_saving_running_time.md)
 
 ## Usage
 1. Write your stock allocation data to a Mysql data table, like following
