@@ -4,7 +4,7 @@ The majority of this installation guide is about how to create a new Amazon EC2 
 have created EC2s before, the content should be quite familiar with you.
 
 1. make sure you have an active AWS account. The Login at [AWS Management Console][1]
-2. Choose region ___US East (Ohio)__, because the AMI to use is at this region, and AMI is region-bound.
+2. Choose region __US East (Ohio)__, because the AMI to use is at this region, and AMI is region-bound.
 3. Create one IAM role (the instance running the AMI will be using this IAM role, skip if you already have). 
    I used the one I already have, which has only one rule, AmazonEC2FullAccess. 
 4. In left-top corner of page, click Services drop down then choose EC2.
