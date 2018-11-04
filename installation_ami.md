@@ -8,7 +8,7 @@ have created EC2s before, the content should be quite familiar with you.
 3. Create one IAM role (the instance running the AMI will be using this IAM role, skip if you already have). 
    I used the one I already have, which has only one rule, AmazonEC2FullAccess. 
 4. In left-top corner of page, click Services drop down then choose EC2.
-5. In input box asking for "Amazon Machine Image (AMI)", type `ami-0336ee7e585e61faa`, you will find
+5. In input box asking for "Amazon Machine Image (AMI)", type `ami-008edb120aef6e6ad`, you will find
    this AMI in category "Community AMI", of which the name is "stockapp_d07cd2_ami"
    
    This image is based on Ubuntu 16.04(ami-0782e9ee97725263d). It has been added one mysql server, 
