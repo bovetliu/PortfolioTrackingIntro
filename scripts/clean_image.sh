@@ -12,17 +12,21 @@
 # 7. created snapshot of volume created in step2
 
 stock_app_path=~/workrepo/InteractiveBroker/IBJts/person_stock_app
-cd ${stock_app_path}
-git checkout master
-git pull origin master
-git checkout ec2_config
-git rebase master
-mvn clean package -Dmaven.test.skip=true
-cp ${stock_app_path}/target/stockapp.jar /tmp
-rm -rf ~/workrepo/InteractiveBroker
-cd ~
-mkdir -p ${stock_app_path}/target
-mv /tmp/stockapp.jar ${stock_app_path}/target
+if [ -d "${stock_app_path}/src" ]; then
+  cd ${stock_app_path}
+  git checkout master
+  git pull origin master
+  git checkout ec2_config
+  git rebase master
+  mvn clean package -Dmaven.test.skip=true
+  cp ${stock_app_path}/target/stockapp.jar /tmp
+  rm -rf ~/workrepo/InteractiveBroker
+  cd ~
+  mkdir -p ${stock_app_path}/target
+  mv /tmp/stockapp.jar ${stock_app_path}/target
+else
+  echo "no src folder in ${stock_app_path}, skip rebuilding stockapp jar."
+fi
 
 # replacing password in ibc configuration for Live and Paper configuration
 sed -i 's/IbLoginId=..*/IbLoginId=edemog/' ~/JtsPaper/paper-ibc-config.ini
