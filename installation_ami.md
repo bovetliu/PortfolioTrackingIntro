@@ -38,29 +38,32 @@ have created EC2s before, the content should be quite familiar with you.
 8. Add Storage: please refer screenshot. 30 GB should be enough.
 
    ![add storage](resources/pics/aws_installation_004_add_storage.png "add storage")
-9. Configure Security Group: No matter you choose to use existing security 
+
+9. add tag, key: category, value: ibgateway_instance
+
+10. Configure Security Group: No matter you choose to use existing security 
    group, or create new one, the bottom line is that you need to guarantee the security group has 
    following 3 + 1 rules added:
-   1. TCP 22 for SSH administration
-   2. TCP 8080 for Web panel management
-   3. TCP 3306 for mysql port
-   4. TCP 80 reserved for future web panel management (optional)
+     1. TCP 22 for SSH administration
+     2. TCP 8080 for Web panel management
+     3. TCP 3306 for mysql port
+     4. TCP 80 reserved for future web panel management (optional)
    
    ![configure_security](resources/pics/aws_installation_005_configure_security.png "configure security")
-10. Review and launch, click launch, select or create a new key pair. The bottom line is that you 
+11. Review and launch, click launch, select or create a new key pair. The bottom line is that you 
    need to know where you stored your .pem file. After clicking Launch Instances, you should be able
    to see following:  
    ![after_review_launch](resources/pics/aws_installation_006_select_keypair.png "after review launch")  
    ![after_review_launch](resources/pics/aws_installation_007_after_review_launch.png "after review launch")
 
-11. Confirm successful running of Stockapp image. Please go to EC2 service dashboard, then click 
+12. Confirm successful running of Stockapp image. Please go to EC2 service dashboard, then click 
     __Running Instances__, should be able to observe the instance just launched by you. Copy the IP 
     address of the instance you just launched. You will need it. In this installation guide, it is
     18.223.28.159. This is just a temporary IP address assigned by AWS automatically.   
     ![click_running_instances](resources/pics/aws_installation_008_click_running_instances.png "click running instances")  
     ![check_running_instances](resources/pics/aws_installation_009_check_running_instances.png "check_running_instances")
 
-12. SSH into the instance
+13. SSH into the instance
     ![ssh_into_instances](resources/pics/aws_installation_010_ssh_into_instances.png "ssh into instances")  
     Explanation of the commands, `chmod 400 <path_to_stockapp.pem>`, make this file readable only 
     by yourself, revoke all other R/W/Execute accessibility of *user group* or *all*. This is required
@@ -70,7 +73,7 @@ have created EC2s before, the content should be quite familiar with you.
     port forwarding between remote 5901 port and local 5901 port. 5901 Port means the 1st VNC remote desktop (5900 + 1).
     For detail, please refer [Install VNC on Ubuntu 16.04][4]
 
-13. If you are able to SSH into the instance, it means you have completed installation of Stockapp using AMI.  
+14. If you are able to SSH into the instance, it means you have completed installation of Stockapp using AMI.  
 
 [1]: https://aws.amazon.com/console/
 [2]: https://www.interactivebrokers.com/en/index.php?f=16457

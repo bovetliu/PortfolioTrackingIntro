@@ -14,7 +14,7 @@ in real-world US stock trading.
 
 ## Setting up
 * [Setting up](./setting_up.md)
-* [Reducing AWS expense by limiting EC2 running time](./setting_up_saving_running_time.md)
+* [Schedule instance starting and shutting down](./schedule_instance_starting_and_shutting_down.md)
 
 ## Usage
 1. Write your stock allocation data to a Mysql data table, like following
