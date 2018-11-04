@@ -1,0 +1,22 @@
+{
+  "region": "us-east-2",
+  "operation": "start_instances",
+  "time_range": [
+    {
+      "time_of_day": "08:55",
+      "tz": "America/New_York"
+    },
+    {
+      "time_of_day": "09:05",
+      "tz": "America/New_York"
+    }
+  ],
+  "filters": [
+    {
+      "Name": "tag:category",
+      "Values": [
+        "ibgateway_instance"
+      ]
+    }
+  ]
+}

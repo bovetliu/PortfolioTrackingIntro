@@ -31,9 +31,9 @@ It will use Cloudwatch events and Lambda function.
    ```
     
 2. change directory to `<project_root>/scripts/StartStopEc2InstancesLambda`, use bash shell to run
-   `zip_lambda_expression.sh`. After running, one zipped file, containing necessary contents inside 
-   directory `StartStopEc2InstancesLambda` will be created in parent folder, namely 
-   `<project_root>/scripts`
+   `install_dependency.sh` and `zip_lambda_expression.sh`. After running, one zipped file, 
+   containing necessary contents inside directory `StartStopEc2InstancesLambda` will be created 
+   in parent folder, namely `<project_root>/scripts`
    ```bash
    bash ./zip_lambda_expression.sh
    ```
