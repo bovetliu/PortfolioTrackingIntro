@@ -14,6 +14,7 @@ in real-world US stock trading.
 
 ## Setting up
 * [Setting up](./setting_up.md)
+* [Assign fixed IP address](./assign_fix_ip_address.md)
 * [Schedule instance starting and shutting down](./schedule_instance_starting_and_shutting_down.md)
 
 ## Usage
