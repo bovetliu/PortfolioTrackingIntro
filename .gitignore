@@ -1,5 +1,6 @@
 /.idea
 *.iml
+*.pyc
 /scripts/StartStopEc2InstancesLambda/pytz*
 /scripts/StartStopEc2InstancesLambda/.idea
 /scripts/StartStopEc2InstancesLambdaContent.zip

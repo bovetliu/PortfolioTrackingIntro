@@ -14,7 +14,7 @@ in real-world US stock trading.
 
 ## Setting up
 * [Setting up](./setting_up.md)
-* [Assign fixed IP address](./assign_fix_ip_address.md)
+* [Assign elastic IP address (Official AWS Documentation)][1]
 * [Schedule instance starting and shutting down](./schedule_instance_starting_and_shutting_down.md)
 
 ## Usage
@@ -55,3 +55,5 @@ Started at Jun. 1st. 2017
 ## Credits
 
 ## License
+
+[1]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#using-instance-addressing-eips-associating
